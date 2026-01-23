@@ -1,0 +1,297 @@
+.create-collection-page {
+    padding: var(--space-2xl) var(--space-lg);
+    min-height: calc(100vh - 160px);
+}
+
+.create-collection-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Header */
+.page-header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.page-title {
+    font-family: var(--font-display);
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-sm);
+}
+
+.page-description {
+    font-size: var(--text-lg);
+    color: var(--text-secondary);
+}
+
+/* Form */
+.create-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+/* Upload Areas */
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.upload-label {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.upload-area {
+    position: relative;
+    background: var(--bg-card);
+    border: 2px dashed var(--border-primary);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    transition: all var(--transition-base);
+}
+
+.upload-area:hover {
+    border-color: var(--color-primary);
+}
+
+.upload-area.has-preview {
+    border-style: solid;
+}
+
+.banner-upload {
+    height: 200px;
+}
+
+.logo-upload {
+    width: 160px;
+    height: 160px;
+}
+
+.upload-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.upload-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: var(--space-sm);
+    color: var(--text-tertiary);
+    cursor: pointer;
+    transition: color var(--transition-base);
+}
+
+.upload-placeholder:hover {
+    color: var(--color-primary);
+}
+
+.upload-hint {
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+}
+
+.remove-image {
+    position: absolute;
+    top: var(--space-sm);
+    right: var(--space-sm);
+    width: 32px;
+    height: 32px;
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background var(--transition-fast);
+}
+
+.remove-image:hover {
+    background: var(--color-error);
+}
+
+/* Form Sections */
+.form-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-xl);
+    padding: var(--space-xl);
+}
+
+.form-section-title {
+    font-family: var(--font-accent);
+    font-size: var(--text-lg);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--space-lg);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-label {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.form-input {
+    padding: var(--space-md) var(--space-lg);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-size: var(--text-base);
+    transition: all var(--transition-base);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(0, 255, 255, 0.1);
+}
+
+.form-input::placeholder {
+    color: var(--text-muted);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-hint {
+    font-size: var(--text-xs);
+    color: var(--text-tertiary);
+}
+
+/* Info Box */
+.info-box {
+    display: flex;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    background: rgba(0, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: var(--radius-lg);
+}
+
+.info-box svg {
+    color: var(--color-primary);
+    flex-shrink: 0;
+}
+
+.info-box strong {
+    display: block;
+    margin-bottom: var(--space-xs);
+    color: var(--text-primary);
+}
+
+.info-box p {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* Submit Button */
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    width: 100%;
+    padding: var(--space-lg);
+    background: var(--gradient-primary);
+    border: none;
+    border-radius: var(--radius-lg);
+    font-family: var(--font-accent);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--bg-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.submit-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+}
+
+.submit-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Success */
+.submission-success {
+    text-align: center;
+    padding: var(--space-3xl);
+    background: var(--bg-card);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-xl);
+}
+
+.success-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 255, 136, 0.1);
+    border: 2px solid var(--color-success);
+    border-radius: 50%;
+    color: var(--color-success);
+    margin-bottom: var(--space-xl);
+}
+
+.submission-success h2 {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    color: var(--text-primary);
+    margin-bottom: var(--space-md);
+}
+
+.submission-success p {
+    color: var(--text-secondary);
+    margin-bottom: var(--space-xl);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}

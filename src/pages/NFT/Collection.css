@@ -1,0 +1,499 @@
+.collection-page {
+    padding-bottom: var(--space-3xl);
+}
+
+/* Banner */
+.collection-banner {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.collection-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 50%, var(--bg-primary) 100%);
+}
+
+/* Header */
+.collection-header {
+    display: flex;
+    gap: var(--space-xl);
+    margin-top: -80px;
+    margin-bottom: var(--space-xl);
+    position: relative;
+    z-index: 1;
+}
+
+.collection-avatar {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+}
+
+.collection-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-xl);
+    border: 4px solid var(--bg-primary);
+}
+
+.collection-avatar .verified-badge {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: var(--bg-primary);
+    border: 3px solid var(--bg-primary);
+}
+
+.collection-details {
+    flex: 1;
+    padding-top: 80px;
+}
+
+.collection-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-md);
+}
+
+.collection-title {
+    font-family: var(--font-display);
+    font-size: var(--text-3xl);
+    font-weight: 800;
+    color: var(--text-primary);
+}
+
+.collection-actions {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--bg-glass);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    text-decoration: none;
+}
+
+.action-btn:hover {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.collection-description {
+    font-size: var(--text-base);
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--space-md);
+    max-width: 800px;
+}
+
+.collection-contract {
+    font-size: var(--text-sm);
+    color: var(--text-tertiary);
+}
+
+.collection-contract code {
+    color: var(--color-primary);
+    font-family: monospace;
+}
+
+/* Stats Grid */
+.collection-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-lg);
+    background: var(--bg-card);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-lg);
+}
+
+.stat-card .stat-value {
+    font-family: var(--font-accent);
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.stat-card .stat-label {
+    font-size: var(--text-xs);
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Tabs */
+.collection-tabs {
+    display: flex;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+    border-bottom: 1px solid var(--border-primary);
+}
+
+.collection-tab {
+    padding: var(--space-md) var(--space-lg);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-family: var(--font-accent);
+    font-size: var(--text-base);
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.collection-tab:hover {
+    color: var(--text-primary);
+}
+
+.collection-tab.active {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
+/* Items Controls */
+.items-controls {
+    display: flex;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    flex: 1;
+    max-width: 400px;
+    padding: var(--space-md) var(--space-lg);
+    background: var(--bg-card);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-lg);
+}
+
+.search-container svg {
+    color: var(--text-tertiary);
+}
+
+.search-container input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-size: var(--text-sm);
+}
+
+.search-container input:focus {
+    outline: none;
+}
+
+.sort-select select {
+    padding: var(--space-md) var(--space-lg);
+    background: var(--bg-card);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-lg);
+    color: var(--text-primary);
+    font-size: var(--text-sm);
+    cursor: pointer;
+}
+
+/* NFT Grid */
+.nft-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: var(--space-lg);
+}
+
+.nft-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-card);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    text-decoration: none;
+    transition: all var(--transition-base);
+}
+
+.nft-card:hover {
+    border-color: var(--border-glow);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.nft-image {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.nft-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.nft-card:hover .nft-image img {
+    transform: scale(1.05);
+}
+
+.nft-favorite {
+    position: absolute;
+    top: var(--space-sm);
+    right: var(--space-sm);
+    width: 32px;
+    height: 32px;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.nft-card:hover .nft-favorite {
+    opacity: 1;
+}
+
+.nft-favorite:hover {
+    color: var(--color-error);
+}
+
+.nft-listed-badge {
+    position: absolute;
+    bottom: var(--space-sm);
+    left: var(--space-sm);
+    padding: 4px 8px;
+    background: var(--color-success);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--bg-primary);
+}
+
+.nft-info {
+    padding: var(--space-md);
+}
+
+.nft-name {
+    font-family: var(--font-accent);
+    font-size: var(--text-base);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.nft-price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--space-sm);
+}
+
+.nft-price,
+.nft-last-sale {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.price-label {
+    font-size: var(--text-xs);
+    color: var(--text-tertiary);
+}
+
+.price-value {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.nft-rarity {
+    font-size: var(--text-xs);
+    color: var(--text-tertiary);
+}
+
+.nft-buy-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    width: 100%;
+    padding: var(--space-md);
+    background: var(--gradient-primary);
+    border: none;
+    font-family: var(--font-accent);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--bg-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.nft-buy-btn:hover {
+    filter: brightness(1.1);
+}
+
+/* Activity Table */
+.activity-table {
+    background: var(--bg-card);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+}
+
+.activity-header,
+.activity-row {
+    display: grid;
+    grid-template-columns: 100px 1fr 120px 120px 120px 100px;
+    padding: var(--space-md) var(--space-lg);
+    gap: var(--space-md);
+}
+
+.activity-header {
+    background: var(--bg-glass);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.activity-row {
+    border-top: 1px solid var(--border-primary);
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+}
+
+.activity-row:hover {
+    background: var(--bg-glass);
+}
+
+.activity-type {
+    font-weight: 600;
+}
+
+.activity-type.sale {
+    color: var(--color-success);
+}
+
+.activity-type.list {
+    color: var(--color-primary);
+}
+
+.activity-type.offer {
+    color: var(--color-warning);
+}
+
+.activity-item {
+    color: var(--text-primary);
+}
+
+.activity-price {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.activity-address {
+    font-family: monospace;
+    font-size: var(--text-xs);
+}
+
+.activity-time {
+    color: var(--text-tertiary);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .collection-stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .activity-header,
+    .activity-row {
+        grid-template-columns: 80px 1fr 100px 100px;
+    }
+
+    .activity-header span:nth-child(5),
+    .activity-row span:nth-child(5),
+    .activity-header span:nth-child(6),
+    .activity-row span:nth-child(6) {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .collection-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: -40px;
+    }
+
+    .collection-avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .collection-details {
+        padding-top: 0;
+    }
+
+    .collection-title-row {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .collection-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .items-controls {
+        flex-direction: column;
+    }
+
+    .search-container {
+        max-width: none;
+    }
+}
