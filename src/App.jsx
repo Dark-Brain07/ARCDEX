@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
+import MobileNav from './components/Layout/MobileNav';
 import Home from './pages/Home';
 import Swap from './pages/DEX/Swap';
 import CreateToken from './pages/DEX/CreateToken';
@@ -33,8 +34,10 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      <MobileNav />
     </div>
   );
 }
 
 export default App;
+

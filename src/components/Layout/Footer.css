@@ -156,3 +156,40 @@
         text-align: center;
     }
 }
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: var(--space-xl) var(--space-md) var(--space-lg);
+    }
+
+    .footer-main {
+        gap: var(--space-lg);
+        margin-bottom: var(--space-lg);
+    }
+
+    .footer-description {
+        font-size: var(--text-xs);
+    }
+
+    .footer-title {
+        font-size: var(--text-xs);
+    }
+
+    .footer-link {
+        font-size: var(--text-xs);
+    }
+
+    .footer-copyright {
+        font-size: var(--text-xs);
+    }
+
+    .social-link {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* Add bottom padding for mobile nav */
+    .footer {
+        padding-bottom: 60px;
+    }
+}

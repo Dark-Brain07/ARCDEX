@@ -334,3 +334,79 @@
         gap: var(--space-xl);
     }
 }
+
+@media (max-width: 480px) {
+    .explore-page {
+        padding: var(--space-lg) 0;
+    }
+
+    .explore-title {
+        font-size: var(--text-2xl);
+    }
+
+    .explore-description {
+        font-size: var(--text-sm);
+    }
+
+    .explore-stats {
+        gap: var(--space-md);
+        padding: var(--space-md);
+        flex-wrap: wrap;
+    }
+
+    .explore-stat {
+        flex-basis: calc(50% - var(--space-md) / 2);
+    }
+
+    .explore-stat .stat-value {
+        font-size: var(--text-lg);
+    }
+
+    .explore-stat .stat-label {
+        font-size: var(--text-xs);
+    }
+
+    .explore-controls {
+        gap: var(--space-sm);
+        margin-bottom: var(--space-lg);
+    }
+
+    .search-container {
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    .sort-btn {
+        padding: var(--space-sm) var(--space-md);
+        font-size: var(--text-xs);
+    }
+
+    .collections-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: var(--space-md);
+    }
+
+    .collection-info {
+        padding: var(--space-md);
+    }
+
+    .collection-name {
+        font-size: var(--text-base);
+    }
+
+    .collection-stats {
+        gap: var(--space-md);
+    }
+
+    .collection-stat .stat-value {
+        font-size: var(--text-xs);
+    }
+
+    .collections-list .collection-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .collections-list .collection-card {
+        gap: var(--space-md);
+    }
+}

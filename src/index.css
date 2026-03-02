@@ -4,7 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 
 /* CSS Reset and Box Sizing */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -17,20 +19,20 @@
   --color-primary-dark: #00CCCC;
   --color-primary-light: #66FFFF;
   --color-primary-glow: rgba(0, 255, 255, 0.5);
-  
+
   /* Secondary Colors */
   --color-secondary: #9D4EDD;
   --color-secondary-dark: #7B2CBF;
   --color-secondary-light: #C77DFF;
   --color-secondary-glow: rgba(157, 78, 221, 0.5);
-  
+
   /* Accent Colors */
   --color-accent: #FF006E;
   --color-accent-alt: #FF9500;
   --color-success: #00FF88;
   --color-warning: #FFD60A;
   --color-error: #FF3B30;
-  
+
   /* Background Colors */
   --bg-primary: #0A0A0F;
   --bg-secondary: #12121A;
@@ -38,31 +40,31 @@
   --bg-card: rgba(26, 26, 37, 0.8);
   --bg-glass: rgba(255, 255, 255, 0.03);
   --bg-glass-dark: rgba(0, 0, 0, 0.4);
-  
+
   /* Gradients */
   --gradient-primary: linear-gradient(135deg, #00FFFF 0%, #9D4EDD 50%, #FF006E 100%);
   --gradient-secondary: linear-gradient(135deg, #9D4EDD 0%, #00FFFF 100%);
   --gradient-dark: linear-gradient(180deg, #12121A 0%, #0A0A0F 100%);
-  --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+  --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
   --gradient-neon: linear-gradient(90deg, #00FFFF, #9D4EDD, #FF006E, #FF9500);
   --gradient-glow: radial-gradient(ellipse at center, var(--color-primary-glow) 0%, transparent 70%);
-  
+
   /* Text Colors */
   --text-primary: #FFFFFF;
   --text-secondary: rgba(255, 255, 255, 0.7);
   --text-tertiary: rgba(255, 255, 255, 0.5);
   --text-muted: rgba(255, 255, 255, 0.3);
-  
+
   /* Border Colors */
   --border-primary: rgba(255, 255, 255, 0.1);
   --border-glow: rgba(0, 255, 255, 0.3);
   --border-accent: rgba(157, 78, 221, 0.3);
-  
+
   /* Typography */
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-display: 'Orbitron', sans-serif;
   --font-accent: 'Rajdhani', sans-serif;
-  
+
   /* Font Sizes */
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -74,7 +76,7 @@
   --text-4xl: 2.25rem;
   --text-5xl: 3rem;
   --text-6xl: 4rem;
-  
+
   /* Spacing */
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
@@ -83,14 +85,14 @@
   --space-xl: 2rem;
   --space-2xl: 3rem;
   --space-3xl: 4rem;
-  
+
   /* Border Radius */
   --radius-sm: 6px;
   --radius-md: 12px;
   --radius-lg: 16px;
   --radius-xl: 24px;
   --radius-full: 9999px;
-  
+
   /* Shadows */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
@@ -98,13 +100,13 @@
   --shadow-glow: 0 0 30px var(--color-primary-glow);
   --shadow-glow-secondary: 0 0 30px var(--color-secondary-glow);
   --shadow-neon: 0 0 10px var(--color-primary), 0 0 20px var(--color-primary), 0 0 40px var(--color-primary);
-  
+
   /* Transitions */
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
   --transition-slow: 400ms ease;
   --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
-  
+
   /* Z-Index */
   --z-dropdown: 100;
   --z-modal: 200;
@@ -137,7 +139,7 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
+  background:
     radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 255, 255, 0.15), transparent),
     radial-gradient(ellipse 60% 40% at 80% 100%, rgba(157, 78, 221, 0.1), transparent),
     radial-gradient(ellipse 50% 30% at 20% 80%, rgba(255, 0, 110, 0.08), transparent);
@@ -153,7 +155,7 @@ body::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: 
+  background-image:
     linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   background-size: 50px 50px;
@@ -217,7 +219,7 @@ body::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
   transform: translateX(-100%);
   transition: transform 0.5s ease;
 }
@@ -234,7 +236,7 @@ body::after {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 40px var(--color-primary-glow), 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 0 40px var(--color-primary-glow), 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .btn-secondary {
@@ -526,9 +528,12 @@ body::after {
 
 /* Animations */
 @keyframes pulse-glow {
-  0%, 100% {
+
+  0%,
+  100% {
     box-shadow: 0 0 20px var(--color-primary-glow);
   }
+
   50% {
     box-shadow: 0 0 40px var(--color-primary-glow), 0 0 60px var(--color-primary-glow);
   }
@@ -538,15 +543,19 @@ body::after {
   0% {
     background-position: -200% 0;
   }
+
   100% {
     background-position: 200% 0;
   }
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -556,6 +565,7 @@ body::after {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -565,9 +575,11 @@ body::after {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -578,7 +590,7 @@ body::after {
 }
 
 .animate-shimmer {
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
 }
@@ -660,17 +672,41 @@ body::after {
   justify-content: space-between;
 }
 
-.gap-xs { gap: var(--space-xs); }
-.gap-sm { gap: var(--space-sm); }
-.gap-md { gap: var(--space-md); }
-.gap-lg { gap: var(--space-lg); }
-.gap-xl { gap: var(--space-xl); }
+.gap-xs {
+  gap: var(--space-xs);
+}
 
-.text-center { text-align: center; }
-.text-right { text-align: right; }
+.gap-sm {
+  gap: var(--space-sm);
+}
 
-.w-full { width: 100%; }
-.h-full { height: 100%; }
+.gap-md {
+  gap: var(--space-md);
+}
+
+.gap-lg {
+  gap: var(--space-lg);
+}
+
+.gap-xl {
+  gap: var(--space-xl);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
 
 .truncate {
   overflow: hidden;
@@ -683,14 +719,114 @@ body::after {
   :root {
     --text-5xl: 2.25rem;
     --text-6xl: 3rem;
+    --text-4xl: 1.875rem;
   }
-  
+
   .container {
     padding: 0 var(--space-md);
   }
-  
+
   .btn {
     padding: var(--space-sm) var(--space-lg);
+  }
+
+  .btn-lg {
+    padding: var(--space-md) var(--space-xl);
+    font-size: var(--text-base);
+  }
+
+  .tabs {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab {
+    white-space: nowrap;
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--text-xs);
+  }
+
+  .modal-overlay {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .modal-content {
+    max-width: 100%;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    max-height: 85vh;
+  }
+
+  .table th,
+  .table td {
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--text-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --text-5xl: 2rem;
+    --text-6xl: 2.5rem;
+    --text-4xl: 1.5rem;
+    --text-3xl: 1.375rem;
+  }
+
+  .container {
+    padding: 0 var(--space-sm);
+  }
+
+  .btn {
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--text-sm);
+  }
+
+  .btn-lg {
+    padding: var(--space-md) var(--space-lg);
+    font-size: var(--text-sm);
+  }
+
+  .card {
+    border-radius: var(--radius-md);
+  }
+
+  .token-input-container {
+    padding: var(--space-md);
+    border-radius: var(--radius-lg);
+  }
+}
+
+/* OnePlus 9R specific (412px) */
+@media (max-width: 420px) {
+  :root {
+    --space-2xl: 2rem;
+    --space-3xl: 2.5rem;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+}
+
+/* Touch-friendly utilities */
+@media (pointer: coarse) {
+
+  .btn,
+  .tab,
+  .icon-btn,
+  .chip {
+    min-height: 44px;
+  }
+
+  .input {
+    min-height: 48px;
+    font-size: 16px;
+    /* Prevent zoom on iOS */
   }
 }
 

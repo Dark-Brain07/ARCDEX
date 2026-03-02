@@ -219,6 +219,43 @@ const Header = () => {
                         </Link>
                     ))}
                 </div>
+
+                {/* Mobile Wallet Section */}
+                <div className="mobile-wallet-section">
+                    <div className="mobile-network-badge">
+                        <span className="network-dot"></span>
+                        Arc Testnet
+                    </div>
+                    {isConnected ? (
+                        <>
+                            <div className="mobile-wallet-info">
+                                <div className="mobile-wallet-icon">
+                                    <Wallet size={22} />
+                                </div>
+                                <div className="mobile-wallet-details">
+                                    <div className="mobile-wallet-balance">
+                                        {balanceValue !== undefined
+                                            ? `${Number(formatUnits(balanceValue, TOKENS.USDC.decimals)).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} ${symbol}`
+                                            : '...'}
+                                    </div>
+                                    <div className="mobile-wallet-address">{formatAddress(address)}</div>
+                                </div>
+                            </div>
+                            <button className="mobile-connect-btn" onClick={() => { open(); setMobileMenuOpen(false); }}>
+                                <Wallet size={18} />
+                                Manage Wallet
+                            </button>
+                            <button className="mobile-disconnect-btn" onClick={() => { disconnect(); setMobileMenuOpen(false); }}>
+                                Disconnect
+                            </button>
+                        </>
+                    ) : (
+                        <button className="mobile-connect-btn" onClick={() => { open(); setMobileMenuOpen(false); }}>
+                            <Wallet size={18} />
+                            Connect Wallet
+                        </button>
+                    )}
+                </div>
             </div>
         </header>
     );

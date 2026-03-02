@@ -542,3 +542,129 @@
     font-size: var(--text-sm);
     color: var(--text-secondary);
 }
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .liquidity-page {
+        padding: var(--space-md) var(--space-sm);
+        min-height: calc(100vh - 140px);
+    }
+
+    .liquidity-container {
+        padding: var(--space-md);
+        max-width: 100%;
+        border-radius: var(--radius-lg);
+    }
+
+    .liquidity-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .liquidity-title {
+        font-size: var(--text-xl);
+    }
+
+    .liquidity-description {
+        font-size: var(--text-sm);
+    }
+
+    .liquidity-header {
+        margin-bottom: var(--space-lg);
+    }
+
+    .liquidity-tabs {
+        margin-bottom: var(--space-lg);
+    }
+
+    .liquidity-tab {
+        padding: var(--space-sm);
+        font-size: var(--text-xs);
+        gap: var(--space-xs);
+    }
+
+    .token-input-container {
+        padding: var(--space-md);
+        border-radius: var(--radius-lg);
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .token-input-col-left,
+    .token-input-col-right {
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .token-input-col-right {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .token-amount-input {
+        font-size: var(--text-2xl);
+    }
+
+    .token-balance {
+        font-size: var(--text-xs);
+    }
+
+    .pool-info {
+        padding: var(--space-md);
+    }
+
+    .pool-stat {
+        font-size: var(--text-xs);
+    }
+
+    .liquidity-btn {
+        padding: var(--space-md);
+        font-size: var(--text-base);
+    }
+
+    .position-card {
+        padding: var(--space-md);
+    }
+
+    .position-stats {
+        flex-wrap: wrap;
+        gap: var(--space-md);
+    }
+
+    .position-stat {
+        flex-basis: calc(50% - var(--space-md) / 2);
+    }
+
+    .position-value {
+        font-size: var(--text-base);
+    }
+
+    /* Token Modal Mobile */
+    .token-modal {
+        max-width: calc(100vw - 32px);
+        max-height: 70vh;
+    }
+
+    .token-modal-header {
+        padding: var(--space-md);
+    }
+
+    .token-search {
+        margin: var(--space-md);
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    .token-list {
+        max-height: 250px;
+    }
+
+    .token-list-item {
+        padding: var(--space-sm);
+    }
+
+    .token-list-icon {
+        width: 32px;
+        height: 32px;
+    }
+}

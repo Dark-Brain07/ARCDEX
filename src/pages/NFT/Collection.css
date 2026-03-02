@@ -497,3 +497,123 @@
         max-width: none;
     }
 }
+
+@media (max-width: 480px) {
+    .collection-page {
+        padding-bottom: var(--space-xl);
+    }
+
+    .collection-banner {
+        height: 160px;
+    }
+
+    .collection-header {
+        gap: var(--space-md);
+        margin-top: -30px;
+    }
+
+    .collection-avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .collection-avatar .verified-badge {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+        bottom: 4px;
+        right: 4px;
+    }
+
+    .collection-title {
+        font-size: var(--text-xl);
+    }
+
+    .collection-description {
+        font-size: var(--text-sm);
+    }
+
+    .collection-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-sm);
+    }
+
+    .stat-card {
+        padding: var(--space-md);
+    }
+
+    .stat-card .stat-value {
+        font-size: var(--text-base);
+    }
+
+    .collection-tabs {
+        overflow-x: auto;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        gap: var(--space-sm);
+    }
+
+    .collection-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .collection-tab {
+        white-space: nowrap;
+        padding: var(--space-sm) var(--space-md);
+        font-size: var(--text-sm);
+    }
+
+    .nft-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-sm);
+    }
+
+    .nft-info {
+        padding: var(--space-sm);
+    }
+
+    .nft-name {
+        font-size: var(--text-sm);
+    }
+
+    .price-value {
+        font-size: var(--text-xs);
+    }
+
+    .nft-buy-btn {
+        padding: var(--space-sm);
+        font-size: var(--text-xs);
+    }
+
+    .activity-header,
+    .activity-row {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        padding: var(--space-sm) var(--space-md);
+        font-size: var(--text-xs);
+    }
+
+    .activity-header span:nth-child(3),
+    .activity-row span:nth-child(3),
+    .activity-header span:nth-child(4),
+    .activity-row span:nth-child(4),
+    .activity-header span:nth-child(5),
+    .activity-row span:nth-child(5),
+    .activity-header span:nth-child(6),
+    .activity-row span:nth-child(6) {
+        display: none;
+    }
+
+    .items-controls {
+        gap: var(--space-sm);
+    }
+
+    .search-container {
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    .sort-select select {
+        padding: var(--space-sm) var(--space-md);
+        font-size: var(--text-xs);
+    }
+}

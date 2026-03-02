@@ -295,3 +295,83 @@
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 480px) {
+    .create-collection-page {
+        padding: var(--space-md) var(--space-sm);
+    }
+
+    .page-header {
+        margin-bottom: var(--space-lg);
+    }
+
+    .page-title {
+        font-size: var(--text-xl);
+    }
+
+    .page-description {
+        font-size: var(--text-sm);
+    }
+
+    .create-form {
+        gap: var(--space-md);
+    }
+
+    .banner-upload {
+        height: 140px;
+    }
+
+    .logo-upload {
+        width: 100px;
+        height: 100px;
+    }
+
+    .upload-placeholder {
+        font-size: var(--text-sm);
+    }
+
+    .upload-hint {
+        font-size: 10px;
+    }
+
+    .form-section {
+        padding: var(--space-md);
+    }
+
+    .form-section-title {
+        font-size: var(--text-base);
+        margin-bottom: var(--space-md);
+    }
+
+    .form-input {
+        padding: var(--space-md);
+        font-size: 16px;
+        /* Prevent zoom on focus */
+    }
+
+    .form-textarea {
+        min-height: 80px;
+    }
+
+    .info-box {
+        padding: var(--space-md);
+    }
+
+    .info-box p {
+        font-size: var(--text-xs);
+    }
+
+    .submit-btn {
+        padding: var(--space-md);
+        font-size: var(--text-base);
+    }
+
+    .submission-success {
+        padding: var(--space-xl);
+    }
+
+    .success-icon {
+        width: 64px;
+        height: 64px;
+    }
+}

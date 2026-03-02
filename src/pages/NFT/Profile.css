@@ -421,3 +421,112 @@
         grid-template-rows: auto auto;
     }
 }
+
+@media (max-width: 480px) {
+    .profile-banner {
+        height: 140px;
+    }
+
+    .profile-header {
+        margin-top: -30px;
+    }
+
+    .avatar-placeholder {
+        width: 72px;
+        height: 72px;
+        font-size: var(--text-2xl);
+    }
+
+    .profile-name {
+        font-size: var(--text-xl);
+    }
+
+    .profile-bio {
+        font-size: var(--text-sm);
+    }
+
+    .profile-address {
+        font-size: var(--text-xs);
+    }
+
+    .profile-meta {
+        flex-wrap: wrap;
+        gap: var(--space-sm);
+        font-size: var(--text-xs);
+    }
+
+    .profile-stats {
+        padding: var(--space-md);
+        gap: var(--space-sm);
+    }
+
+    .profile-stat {
+        padding: var(--space-sm);
+    }
+
+    .profile-stat .stat-value {
+        font-size: var(--text-lg);
+    }
+
+    .profile-stat .stat-label {
+        font-size: var(--text-xs);
+    }
+
+    .profile-tabs {
+        gap: var(--space-sm);
+    }
+
+    .profile-tab {
+        padding: var(--space-sm) var(--space-md);
+        font-size: var(--text-xs);
+        white-space: nowrap;
+    }
+
+    .nft-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-sm);
+    }
+
+    .nft-info {
+        padding: var(--space-sm);
+    }
+
+    .nft-name {
+        font-size: var(--text-sm);
+    }
+
+    .nft-collection {
+        font-size: 10px;
+    }
+
+    .nft-price {
+        font-size: var(--text-xs);
+    }
+
+    .activity-row {
+        grid-template-columns: 1fr;
+        gap: var(--space-xs);
+        padding: var(--space-md);
+    }
+
+    .activity-time {
+        text-align: left;
+    }
+
+    .empty-state {
+        padding: var(--space-xl);
+    }
+
+    .connect-prompt {
+        min-height: 40vh;
+    }
+
+    .connect-prompt h2 {
+        font-size: var(--text-xl);
+    }
+
+    .edit-profile-btn {
+        padding: var(--space-xs) var(--space-md);
+        font-size: var(--text-xs);
+    }
+}

@@ -550,3 +550,110 @@
         text-align: left;
     }
 }
+
+@media (max-width: 480px) {
+    .nft-detail-page {
+        padding: var(--space-lg) 0 var(--space-xl);
+    }
+
+    .nft-detail-title {
+        font-size: var(--text-2xl);
+    }
+
+    .owner-info {
+        flex-wrap: wrap;
+        gap: var(--space-md);
+    }
+
+    .price-body {
+        padding: var(--space-md);
+    }
+
+    .current-price .price-value {
+        font-size: var(--text-2xl);
+    }
+
+    .price-header {
+        padding: var(--space-sm) var(--space-md);
+        font-size: var(--text-xs);
+    }
+
+    .nft-section {
+        padding: var(--space-md);
+    }
+
+    .section-title {
+        font-size: var(--text-base);
+    }
+
+    .properties-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-xs);
+    }
+
+    .property-card {
+        padding: var(--space-sm);
+    }
+
+    .property-trait {
+        font-size: 10px;
+    }
+
+    .property-value {
+        font-size: var(--text-xs);
+    }
+
+    .offer-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-sm);
+    }
+
+    .activity-item {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: var(--space-sm);
+        font-size: var(--text-xs);
+    }
+
+    .activity-addresses {
+        grid-column: span 2;
+    }
+
+    .detail-row {
+        font-size: var(--text-sm);
+    }
+
+    /* Offer Modal Mobile */
+    .offer-modal {
+        max-width: calc(100vw - 24px);
+    }
+
+    .modal-header {
+        padding: var(--space-md);
+    }
+
+    .modal-body {
+        padding: var(--space-md);
+    }
+
+    .modal-footer {
+        padding: var(--space-md);
+        flex-direction: column;
+    }
+
+    .offer-nft-preview img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .offer-input-wrapper input {
+        padding: var(--space-md);
+        font-size: var(--text-base);
+    }
+
+    .image-action-btn {
+        width: 32px;
+        height: 32px;
+    }
+}
